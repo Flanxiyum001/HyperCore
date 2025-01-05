@@ -4,47 +4,84 @@
 
 > **"The World's AI, Powered by Everyone."**
 
-## Table of Contents
+Table of Contents
+About HyperCore
+Features
+Getting Started
+Contributing
+Technologies Used
+License
+About HyperCore
+HyperCore is a decentralized global AI network designed to empower individuals and businesses with cutting-edge technology. It leverages advanced machine learning models to automate processes, optimize workflows, and create efficient solutions for modern problems. HyperCore aims to provide scalable, secure, and reliable AI services that can be accessed by anyone globally.
 
-1. [About HyperCore](#about-hypercore)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-4. [Contributing](#contributing)
-5. [Technologies Used](#technologies-used)
-6. [License](#license)
+Features
+Decentralization: Built on a decentralized architecture, ensuring no single point of failure.
+Real-time Data: Allows real-time communication through WebSocket connections for continuous data exchange.
+AI-powered: Uses machine learning models for automated decision-making and anomaly detection.
+Security: User authentication and JWT-based security for API routes.
+Scalability: Easily scalable to handle growing data and users, leveraging MongoDB Atlas for cloud-based data storage.
+Getting Started
+To get started with HyperCore, follow these steps:
 
----
+Prerequisites
+Node.js (>= 14.x)
+MongoDB Atlas account
+Web browser for frontend access
+Installation Steps
+Clone the Repository:
 
-## About HyperCore
+bash
+Copy code
+git clone https://github.com/Flanxiyum001/HyperCore.git
+cd HyperCore
+Install Backend Dependencies: From the backend directory, install the dependencies:
 
-**HyperCore** aims to be the most powerful and scalable AI network ever created. It provides a platform where anyone can contribute their idle computing power to train and deploy AI models, making cutting-edge AI accessible to all, not just large corporations.
+bash
+Copy code
+cd backend
+npm install
+Set Up MongoDB: Ensure you have a MongoDB Atlas account and replace the mongoURI in backend/server.js with your MongoDB connection string.
 
-### Key Goals:
+Start the Backend: Run the server to start the backend:
 
-- **Decentralized AI Model Training**: Allow users to contribute computational resources to train complex AI models.
-- **Global Collaboration**: Break down barriers by involving the global community in AI development.
-- **AI for the People**: Democratize the access to and control of artificial intelligence.
+bash
+Copy code
+node backend/server.js
+Install Frontend Dependencies: From the frontend directory, install the dependencies:
 
-## Features
+bash
+Copy code
+cd frontend
+npm install
+Start the Frontend: Run the frontend using the following command:
 
-- **Decentralized Network**: No reliance on centralized servers, with every contributor acting as a node.
-- **AI Model Deployment**: Users can deploy, train, and share AI models directly on the platform.
-- **Token-Based Rewards**: Contributors earn tokens based on their contribution of computing power.
-- **Scalability**: Easily scalable architecture to handle an increasing number of contributors and models.
-- **Community-Driven**: Open-source, with the aim to empower the global community to build and shape the future of AI.
+bash
+Copy code
+npm start
+Now, your application should be accessible at http://localhost:3000 and the backend API at http://localhost:5000.
 
-## Getting Started
+Contributing
+We welcome contributions to the HyperCore project! If you'd like to contribute, please follow these steps:
 
-### Prerequisites:
+Fork the repository.
+Create a new branch (git checkout -b feature-branch).
+Make your changes and test them.
+Commit your changes (git commit -am 'Add new feature').
+Push to your forked repository (git push origin feature-branch).
+Open a pull request describing your changes.
+Guidelines
+Follow the code style conventions used in the project.
+Make sure to write tests for new features or bug fixes.
+Keep pull requests small and focused on one issue.
+Technologies Used
+Node.js: For backend server and API routes.
+Express: Web framework for Node.js.
+MongoDB: NoSQL database for storing user data and other essential data.
+WebSocket: For real-time communication between server and clients.
+React: Frontend JavaScript framework for building the user interface.
+JWT: For user authentication and session management.
+CSS: For styling the frontend application.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-- Node.js
-- MongoDB (local or cloud)
-- Git
-- Basic knowledge of JavaScript (for backend) and React (for frontend)
 
-### Setup Instructions:
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Flanxiyum/HyperCore.git
-   cd HyperCore
