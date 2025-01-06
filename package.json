@@ -17,5 +17,10 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.9.3",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "postcss-loader": "^8.1.1",
+    "source-map-loader": "^5.0.0"
   }
 }

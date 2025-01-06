@@ -32,7 +32,7 @@ function generateRandomNodeData() {
         { source: 1, target: 2 },
         { source: 1, target: 3 }
     ];
-    return { nodes, links };
+    return { nodes, links };    
 }
 
 console.log('WebSocket server running on ws://localhost:8080');
