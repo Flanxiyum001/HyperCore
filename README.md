@@ -5,46 +5,93 @@
 > **"The World's AI, Powered by Everyone."**
 
 ## Table of Contents
-
-1. [About HyperCore](#about-hypercore)
-2. [Features](#features)
-3. [Getting Started](#getting-started)
-4. [Contributing](#contributing)
-5. [Technologies Used](#technologies-used)
-6. [License](#license)
-
----
+- [About HyperCore](#about-hypercore)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Contributing](#contributing)
+- [Technologies Used](#technologies-used)
+- [License](#license)
 
 ## About HyperCore
-
-**HyperCore** aims to be the most powerful and scalable AI network ever created. It provides a platform where anyone can contribute their idle computing power to train and deploy AI models, making cutting-edge AI accessible to all, not just large corporations.
-
-### Key Goals:
-
-- **Decentralized AI Model Training**: Allow users to contribute computational resources to train complex AI models.
-- **Global Collaboration**: Break down barriers by involving the global community in AI development.
-- **AI for the People**: Democratize the access to and control of artificial intelligence.
+HyperCore is a decentralized global AI network designed to empower individuals and businesses with cutting-edge technology. It leverages advanced machine learning models to automate processes, optimize workflows, and create efficient solutions for modern problems. HyperCore aims to provide scalable, secure, and reliable AI services that can be accessed by anyone globally.
 
 ## Features
-
-- **Decentralized Network**: No reliance on centralized servers, with every contributor acting as a node.
-- **AI Model Deployment**: Users can deploy, train, and share AI models directly on the platform.
-- **Token-Based Rewards**: Contributors earn tokens based on their contribution of computing power.
-- **Scalability**: Easily scalable architecture to handle an increasing number of contributors and models.
-- **Community-Driven**: Open-source, with the aim to empower the global community to build and shape the future of AI.
+- **Decentralization**: Built on a decentralized architecture, ensuring no single point of failure.
+- **Real-time Data**: Allows real-time communication through WebSocket connections for continuous data exchange.
+- **AI-powered**: Uses machine learning models for automated decision-making and anomaly detection.
+- **Security**: User authentication and JWT-based security for API routes.
+- **Scalability**: Easily scalable to handle growing data and users, leveraging MongoDB Atlas for cloud-based data storage.
 
 ## Getting Started
+To get started with HyperCore, follow these steps:
 
-### Prerequisites:
+### Prerequisites
+- **Node.js** (>= 14.x)
+- **MongoDB Atlas** account
+- **Web browser** for frontend access
 
-- Node.js
-- MongoDB (local or cloud)
-- Git
-- Basic knowledge of JavaScript (for backend) and React (for frontend)
+### Installation Steps
 
-### Setup Instructions:
+1. **Clone the Repository**:
+    ```bash
+    git clone https://github.com/Flanxiyum001/HyperCore.git
+    cd HyperCore
+    ```
 
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/Flanxiyum/HyperCore.git
-   cd HyperCore
+2. **Install Backend Dependencies**:
+    From the `backend` directory, install the dependencies:
+    ```bash
+    cd backend
+    npm install
+    ```
+
+3. **Set Up MongoDB**:
+    Ensure you have a MongoDB Atlas account and replace the `mongoURI` in `backend/server.js` with your MongoDB connection string.
+
+4. **Start the Backend**:
+    Run the server to start the backend:
+    ```bash
+    node backend/server.js
+    ```
+
+5. **Install Frontend Dependencies**:
+    From the `frontend` directory, install the dependencies:
+    ```bash
+    cd frontend
+    npm install
+    ```
+
+6. **Start the Frontend**:
+    Run the frontend using the following command:
+    ```bash
+    npm start
+    ```
+
+Now, your application should be accessible at `http://localhost:3000` and the backend API at `http://localhost:5000`.
+
+## Contributing
+We welcome contributions to the HyperCore project! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature-branch`).
+3. Make your changes and test them.
+4. Commit your changes (`git commit -am 'Add new feature'`).
+5. Push to your forked repository (`git push origin feature-branch`).
+6. Open a pull request describing your changes.
+
+### Guidelines
+- Follow the code style conventions used in the project.
+- Make sure to write tests for new features or bug fixes.
+- Keep pull requests small and focused on one issue.
+
+## Technologies Used
+- **Node.js**: For backend server and API routes.
+- **Express**: Web framework for Node.js.
+- **MongoDB**: NoSQL database for storing user data and other essential data.
+- **WebSocket**: For real-time communication between server and clients.
+- **React**: Frontend JavaScript framework for building the user interface.
+- **JWT**: For user authentication and session management.
+- **CSS**: For styling the frontend application.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
